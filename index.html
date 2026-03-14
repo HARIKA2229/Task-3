@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Study Helper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>📘 Student Study Helper</h1>
+</header>
+
+<!-- Study Notes Carousel -->
+<section>
+    <h2>📖 Quick Study Tips</h2>
+    <div class="carousel">
+        <div class="slide active">Revise daily for 30 minutes.</div>
+        <div class="slide">Practice coding every day.</div>
+        <div class="slide">Solve previous year questions.</div>
+    </div>
+    <button onclick="prevSlide()">Previous</button>
+    <button onclick="nextSlide()">Next</button>
+</section>
+
+<!-- Quiz Section -->
+<section>
+    <h2>📝 Practice Quiz</h2>
+    <div id="quiz-container">
+        <p id="question"></p>
+        <div id="options"></div>
+        <button onclick="nextQuestion()">Next</button>
+        <p id="result"></p>
+    </div>
+</section>
+
+<!-- Motivation API -->
+<section>
+    <h2>💡 Motivation Booster</h2>
+    <p id="quote">Click below to get motivation</p>
+    <button onclick="getQuote()">Get Motivation</button>
+</section>
+
+<footer>
+    <p>© 2026 Student Study Helper</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
